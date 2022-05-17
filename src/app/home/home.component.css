@@ -16,7 +16,7 @@
 }
 
 .sub-section-1 section {
-    width: 40vw;
+    width: 35vw;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@
 }
 
 .sub-section-1 img {
-    width: 40vw;
+    width: 35vw;
     height: fit-content;
     margin-top: 25px;
 }
@@ -79,7 +79,7 @@
     border: none;
     border-radius: 30px;
     padding: 8px 20px 8px 20px;
-    margin: 50px 25px 0 0;
+    margin: 50px 20px 0 0;
     cursor: pointer;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .sub-section-2 section {
-    width: 40vw;
+    width: 35vw;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -110,9 +110,9 @@
 }
 
 .sub-section-2 section img {
-    width: 30vw;
+    width: 31vw;
     height: fit-content;
-    margin: 75px 0 25px 50px;
+    margin: 40px 25px 25px 25px;
 }
 
 .sub-section-2 section article img {
@@ -139,14 +139,13 @@
 }
 
 .sub-section-2 section h3 {
-    margin-top: 75px;
+    margin: 45px 0 0 50px;
     color: #687281;
     font-weight: lighter;
-    margin-left: 50px;
 }
 
 .sub-section-2 section nav {
-    width: 40vw;
+    width: 30vw;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -168,7 +167,7 @@
 }
 
 .sub-section-3 {
-    width: 70vw;
+    width: 65vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -220,7 +219,7 @@
 }
 
 .sub-section-4 {
-    width: 75vw;
+    width: 65vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -288,7 +287,7 @@
 }
 
 .sub-section-5 {
-    width: 75vw;
+    width: 70vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -343,12 +342,12 @@
 }
 
 .sub-section-6 {
-    width: 75vw;
+    width: 70vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 100px auto 0 auto;
+    margin: 75px auto 0 auto;
     background-color: #000;
     padding: 50px 0;
     border-radius: 25px;
@@ -390,7 +389,7 @@
 }
 
 footer {
-    width: 75vw;
+    width: 70vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -403,8 +402,8 @@ footer section div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 30vw;
+    justify-content: space-evenly;
+    width: 23vw;
     margin: 15px auto;
 }
 
@@ -423,12 +422,22 @@ footer section div p {
 
 footer section div form {
     width: 20vw;
-    padding: 20px;
-    box-shadow: 0 0 20px #ccc;
+    padding: 10px 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 20px #f2f2f2;
+    margin: 10px 0 0 10px;
+    font-size: small;
+    font-weight: lighter;
 
 }
 
 footer section div form input {
     background-color: #fff;
     border: none;
+    font-size: small;
+    font-weight: lighter;
+}
+
+#footerSubscribe {
+    cursor: pointer;
 }
