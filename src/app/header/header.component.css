@@ -54,15 +54,15 @@ header {
     justify-content: space-between;
 }
 
-.signup-header p {
+.signup-header a {
     color: #7700ff;
     font-size: medium;
     cursor: pointer;
+    text-decoration: none;
 }
 
+
 .signup-header button {
-    color: #ffffff;
-    font-size: small;
     background-color: #00163a;
     border: none;
     border-radius: 25px;
@@ -70,6 +70,12 @@ header {
     height: fit-content;
     margin: auto 0;
     cursor: pointer;
+}
+
+.signup-header button a {
+    font-size: small;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 /* .routes-header {
