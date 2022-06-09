@@ -1,8 +1,3 @@
-@font-face {
-    font-family: "Futura";
-    src: local("Futura"), url(../assets/fonts/Futura/Futura-Medium.ttf) format("truetype");
-}
-
 header {
     display: flex;
     flex-wrap: wrap;
@@ -16,7 +11,7 @@ header {
     display: flex;
     width: 20vw;
     justify-content: left;
-    margin: auto 0;   
+    margin: auto 0;
 }
 
 .reloadly-logo-header img {
@@ -35,7 +30,9 @@ header {
 }
 
 .search-header {
-    background: white url(https://res.cloudinary.com/reloadlydevelopers/image/upload/c_scale,w_15/v1650550619/search-26272_nhuros.png) right no-repeat;
+    background: white
+        url(https://res.cloudinary.com/reloadlydevelopers/image/upload/c_scale,w_15/v1650550619/search-26272_nhuros.png)
+        right no-repeat;
     background-origin: content-box;
     padding: 8px 16px;
     width: 30vw;
@@ -61,7 +58,6 @@ header {
     text-decoration: none;
 }
 
-
 .signup-header button {
     background-color: #00163a;
     border: none;
@@ -86,7 +82,7 @@ header {
     cursor: pointer;
 }
 
-.routes-header a+a {
+.routes-header a + a {
     margin-left: 20px;
 }
 
@@ -94,7 +90,6 @@ header {
     display: flex;
     width: 16vw;
     justify-content: space-between;
-   
 }
 
 .rest-of-header img {

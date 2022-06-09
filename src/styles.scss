@@ -1,0 +1,26 @@
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+@import "./assets/scss/variables";
+@import "./assets/scss/type";
+@import "./assets/scss/buttons";
+@import "./assets/scss/colors";
+
+// Global component styles
+
+html,
+body {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Futura Book, sans-serif;
+
+    font-display: swap;
+}
+
+a {
+    &:focus {
+        outline: none;
+    }
+}

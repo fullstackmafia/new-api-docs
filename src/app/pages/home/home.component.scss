@@ -1,0 +1,47 @@
+.page {
+    width: 100%;
+
+    .hero-section {
+        padding-top: 40px;
+        .section-heading {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        .section-description {
+            font-size: 16px;
+        }
+        .section-subheading {
+            font-size: 32px;
+            margin: 40px 0 16px;
+        }
+        button {
+            height: 47px;
+            background: var(--purple-1);
+            font-size: 16px;
+            color: white;
+            border: none;
+            padding: 13px 45px;
+            box-shadow: 5px 15px 20px #71717129;
+            border-radius: 26px;
+            margin-top: 24px;
+        }
+        .tags {
+            margin-top: 48px;
+            gap: 24px;
+            p {
+                height: 34px;
+                background: var(--blue-1);
+                border-radius: 17px;
+                padding: 8px 20px;
+                font-size: 14px;
+            }
+        }
+        .icon {
+            width: 100%;
+            margin-top: -40px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

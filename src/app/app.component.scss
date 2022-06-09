@@ -1,0 +1,9 @@
+main {
+    width: 100%;
+    .content {
+        width: 70%;
+        @media screen and (max-width: 1440px) {
+            width: 80%;
+        }
+    }
+}

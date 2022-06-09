@@ -1,0 +1,205 @@
+@font-face {
+    font-family: "Futura Bold Italic";
+    src: url("../../assets/fonts/Futura-Bold-Italic.ttf") format("truetype");
+    font-display: fallback;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Futura Bold";
+    src: url("../../assets/fonts/Futura-Bold.ttf") format("truetype");
+    font-display: fallback;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Futura Book Italic";
+    src: url("../../assets/fonts/Futura-Book-Italic.ttf") format("truetype");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "Futura Book";
+    src: url("../../assets/fonts/Futura-Book.ttf") format("truetype");
+    font-display: fallback;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Futura Condensed Light";
+    font-weight: normal;
+    src: url("../../assets/fonts/Futura-CondensedLight.otf") format("opentype");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "Futura Extra Black";
+    font-weight: normal;
+    src: url("../../assets/fonts/Futura-Extra-Black.ttf") format("truetype");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "Futura Heavy Italic";
+    font-weight: normal;
+    src: url("../../assets/fonts/Futura-Heavy-Italic.ttf") format("truetype");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "Futura Heavy";
+    font-weight: normal;
+    src: url("../../assets/fonts/Futura-Heavy.ttf") format("truetype");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "Futura Light BT";
+    src: url("../../assets/fonts/futura-light-bt.ttf") format("truetype");
+    font-display: fallback;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Futura Light Italic";
+    src: url("../../assets/fonts/Futura-Light-Italic.ttf") format("truetype");
+    font-display: fallback;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Futura Light";
+    src: url("../../assets/fonts/Futura-Light.ttf") format("truetype");
+    font-display: fallback;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Futura Medium Condensed";
+    src: url("../../assets/fonts/futura-medium-condensed.ttf") format("truetype");
+    font-display: fallback;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Futura Medium Italic";
+    src: url("../../assets/fonts/Futura-Medium-Italic.ttf") format("truetype");
+    font-display: fallback;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Futura Medium";
+    src: url("../../assets/fonts/futura-medium.ttf") format("truetype");
+    font-display: fallback;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Futura PT Book";
+    font-weight: normal;
+    src: url("../../assets/fonts/futura-pt-book.otf") format("opentype");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "Futura PT Demi";
+    font-weight: normal;
+    src: url("../../assets/fonts/Futura-PT-Demi.otf") format("opentype");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "Futura PT Light";
+    font-weight: normal;
+    src: url("../../assets/fonts/Futura-PT-Light.otf") format("opentype");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "Futura PT Medium";
+    font-weight: normal;
+    src: url("../../assets/fonts/FuturaPTMedium.otf") format("opentype");
+    font-display: fallback;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button {
+    margin: 0;
+    font-variant-ligatures: common-ligatures;
+}
+
+//headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+button {
+    font-family: "Futura PT Demi";
+}
+
+h1,
+.h1 {
+    font-family: "Futura PT Demi";
+}
+
+h2,
+.h2 {
+    font-family: "Futura PT Demi";
+}
+p,
+span {
+    font-family: "Futura PT Book";
+}
+
+.medium-text {
+    font-family: "Futura PT Medium";
+}
+
+//colors
+.text-grey-1 {
+    color: var(--grey-1);
+}
+
+.text-purple-1 {
+    color: var(--purple-1);
+}
+
+.text-black-1 {
+    color: var(--black-1);
+}
+
+.text-black-2 {
+    color: var(--black-2);
+}
+
+.text-black-3 {
+    color: var(--black-3);
+}
+
+.text-black-4 {
+    color: var(--black-4);
+}
+
+.text-black-5 {
+    color: var(--black-5);
+}
+
+.text-white-1 {
+    color: var(--white-1);
+}
