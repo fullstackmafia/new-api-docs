@@ -5,13 +5,13 @@ header {
         width: 100%;
         margin-bottom: 40px;
         .logo {
-            width: 120px;
+            width: 200px;
             img {
                 width: 100%;
             }
         }
         .searchbar {
-            min-width: 400px;
+            min-width: 600px;
             height: 37px;
             background: #ffffff 0% 0% no-repeat padding-box;
             box-shadow: 0px 10px 25px #c5c0c059;
@@ -19,7 +19,8 @@ header {
             padding: 10px 30px;
             border-radius: 30px;
             input {
-                flex-grow: 1;
+                text-align: center;
+                // flex-grow: 1;
                 border: none;
                 outline: none;
                 background: transparent;
@@ -42,12 +43,15 @@ header {
         }
     }
     .main-links {
-        border-bottom: solid 1px rgb(240, 240, 240);
+        border-bottom: solid 1px #ececec;
         h1 {
             margin-right: 20px;
             padding: 5px;
             font-size: 16px;
             cursor: pointer;
+            &:hover {
+                color: var(--purple-1);
+            }
         }
         .active-link {
             border-bottom: solid 1px var(--purple-1);

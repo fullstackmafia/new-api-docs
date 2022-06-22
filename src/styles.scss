@@ -12,15 +12,47 @@ body {
     position: relative;
     min-height: 100%;
     margin: 0;
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: Futura Book, sans-serif;
-
     font-display: swap;
+
+    --side-padding: 10%;
+    --small-side-padding: 32px;
+}
+
+* {
+    line-height: 1.4;
+    transition: all ease 0.4s;
 }
 
 a {
     &:focus {
         outline: none;
+    }
+}
+
+.page-content {
+    padding: 0 var(--small-side-padding);
+}
+
+.sidebar-container {
+    width: 20%;
+    padding: 60px 0 0 var(--small-side-padding);
+    flex-shrink: 0;
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        padding: 2px 0;
+        margin-bottom: 16px;
+        cursor: pointer;
+        &:hover {
+            @extend .active;
+        }
+    }
+    .active {
+        font-weight: 550;
+        color: var(--purple-1);
     }
 }

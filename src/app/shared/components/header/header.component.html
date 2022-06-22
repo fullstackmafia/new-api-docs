@@ -1,7 +1,7 @@
-<header>
+<header class="bg-white">
     <section class="top d-flex align-items-center justify-content-between">
         <div class="logo"><img alt="logo" src="assets/images/logo.svg" /></div>
-        <div class="searchbar d-flex align-items-center">
+        <div class="searchbar d-flex align-items-center justify-content-center">
             <div class="icon"><img alt="search" src="assets/images/home/search.svg" /></div>
             <input class="text-grey-1 medium-text" placeholder="Search Documentation..." />
         </div>
@@ -12,8 +12,8 @@
     </section>
     <section class="d-flex align-items-center justify-content-between">
         <div class="main-links text-black-2 d-flex align-items-center justify-content-start">
-            <h1 class="active-link">Home</h1>
-            <h1>Airtime</h1>
+            <h1 routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active-link">Home</h1>
+            <h1 routerLink="/airtime" routerLinkActive="active-link">Airtime</h1>
             <h1>Gift Cards</h1>
             <h1>Developer Tools</h1>
             <h1>Security</h1>

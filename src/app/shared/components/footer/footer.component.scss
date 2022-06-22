@@ -1,0 +1,67 @@
+footer {
+    padding: 0 0 100px 0;
+    position: relative;
+    .top {
+        margin-bottom: 100px;
+        h4 {
+            font-weight: 500;
+            font-size: 24px;
+            img {
+                width: 85px;
+                margin-left: 40px;
+                cursor: pointer;
+                &:last-of-type {
+                    margin-left: 16px;
+                }
+            }
+        }
+    }
+    .left {
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            &:not(:last-of-type) {
+                margin-bottom: 20px;
+            }
+            img {
+                width: 16px;
+                margin-right: 8px;
+            }
+            span {
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+    }
+    .right {
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            margin-bottom: 13px;
+        }
+        .input-box {
+            width: 400px;
+            border: 0.5px solid #606a7a;
+            border-radius: 5px;
+            padding: 14px 20px;
+            &:focus-within {
+                border: 1px solid var(--purple-1);
+            }
+            input {
+                width: 70%;
+                border: none;
+                background: transparent;
+                font-weight: 400;
+                font-size: 16px;
+                outline: none;
+            }
+            span {
+                padding: 10px;
+                cursor: pointer;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
