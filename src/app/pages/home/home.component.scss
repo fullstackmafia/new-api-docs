@@ -1,6 +1,6 @@
 .page {
     width: 100%;
-    padding-left: 10%;
+    padding-left: var(--side-padding);
 
     .hero-section {
         .left-content {

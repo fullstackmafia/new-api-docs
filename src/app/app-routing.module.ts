@@ -9,6 +9,14 @@ const routes: Routes = [
     {
         path: 'airtime',
         loadChildren: () => import('./pages/airtime/airtime.module').then(m => m.AirtimeModule)
+    },
+    {
+        path: 'gift-cards',
+        loadChildren: () => import('./pages/giftcards/giftcards.module').then(m => m.GiftcardsModule)
+    },
+    {
+        path: 'utility-payments',
+        loadChildren: () => import('./pages/utility/utility.module').then(m => m.UtilityModule)
     }
 ];
 
