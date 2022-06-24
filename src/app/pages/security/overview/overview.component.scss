@@ -1,0 +1,21 @@
+.sub-section {
+    width: 100%;
+    .right {
+        width: 35%;
+    }
+}
+.section-type-3 {
+    padding: 0;
+    .section-list {
+        gap: 0 30px;
+        .section-item {
+            width: 30%;
+        }
+    }
+}
+
+.skewed-section {
+    .background {
+        top: -100px;
+    }
+}

@@ -1,0 +1,156 @@
+<div class="overview-page security d-flex flex-column justify-content-between">
+    <div class="top">
+        <section class="hero-section-1 d-flex flex-column align-items-start">
+            <h2 class="text-black-1">General Security</h2>
+            <p class="page-description text-black-5">
+                While working with APIs, it's very important to observe certain security measures to avoid having your
+                account being compromised.
+            </p>
+            <p class="page-description text-black-5">
+                To this end, it’s important to establish guidelines to be followed when integrating Reloadly's APIs to
+                your
+                product or application. This guide will be helpful to security engineers, solution architects, product
+                managers, and anyone integrating APIs in general as its directives span across different applications
+                and
+                use cases.
+            </p>
+        </section>
+
+        <section class="list-section">
+            <h3 class="text-black-3">Governance</h3>
+            <ul class="text-black-5">
+                <li number="1">
+                    Consider forming an ITSM (IT Security Management) team to formulate IT security policies, assess
+                    security vulnerabilities periodically and enforce security policies.
+                </li>
+                <li number="2">
+                    Make IT Security an integral part of your product design and integration processes.
+                </li>
+                <li number="3">
+                    Be aware of the IT security requirements imposed by those parties with whom you integrate.
+                </li>
+                <li number="4">
+                    Before you go live with your product and integrations with others (e.g. Reloadly) review all
+                    security measures that you have taken to bullet-proof your software.
+                </li>
+                <li number="5">
+                    Enforce strong security best practices such as 2FA, regular password resets, etc, on your own
+                    customers.
+                </li>
+                <li number="6">
+                    Review security vulnerabilities of any third-party software libraries your software might depend on.
+                </li>
+            </ul>
+        </section>
+
+        <section class="list-section">
+            <h3 class="text-black-3">Development team</h3>
+            <ul class="text-black-5">
+                <li number="1">
+                    Promote and encourage a strong culture around security in design and code. Security is not an
+                    after-thought, it needs to be baked into software design from the get-go.
+                </li>
+                <li number="2">
+                    Ensure that production security credentials like passwords, clientID, clientsecret, etc. are never
+                    checked in into version control.
+                </li>
+                <li number="3">
+                    Ensure that your source code is accessible to only those who need to have access to it.
+                </li>
+                <li number="4">
+                    Have your engineering team review code with your ITSM team to certify that all security policies
+                    mandated by the organization are fully implemented.
+                </li>
+                <li number="5">
+                    Ensure that sensitive information such as passwords etc. is never stored in databases or files in
+                    clear-text format; they should be always encrypted with strong and industry-standard encryption.
+                </li>
+                <li number="6">
+                    Ensure that developer machines and servers are always patched with the latest security patches
+                    appropriate for the operating systems they run.
+                </li>
+                <li number="7">
+                    Be aware of social engineering and other phishing threats.
+                </li>
+                <li number="8">
+                    Ensure and demand from third-party integrators that end-to-end encryption via the latest standards
+                    of SSL/TLS is used.
+                </li>
+                <li number="9">
+                    If you integrate with Reloadly APIs via server-side, ensure that your security credentials like
+                    ClientID and ClientSecret are not printed to server logs. Your production servers should be fully
+                    secure and locked down for any unauthorized access.
+                </li>
+                <li number="10">
+                    If you integrate with Reloadly APIs via SDK, ensure that you have robust processes in place to
+                    manage the production clientID and clientSecret that you package in your mobile apps. Consult the
+                    relevant documents and best practices applicable for the platform you are developing for, e.g. iOS,
+                    Android.
+                </li>
+            </ul>
+        </section>
+
+        <section class="list-section">
+            <h3 class="text-black-3">Operational</h3>
+            <ul class="text-black-5">
+                <li number="1">
+                    Ensure that you create your production Developer Portal user ID using a dedicated company email ID
+                    that's registered with your company domain. Don't use email addresses from popular email services
+                    like Gmail or Yahoo to create your production user ID in the Reloadly developer portal.
+                </li>
+                <li number="2">
+                    Handover your Developer Portal production credentials to the right team or authorized person
+                    managing IT production systems for your company. You should never share passwords with anyone, not
+                    even Reloadly. Change your Developer Portal password for production access regularly, typically
+                    every 90 days or less.
+                </li>
+                <li number="3">
+                    Ensure that you set up 2FA on your Developer Portal account. The mobile device used, should belong
+                    to a designated and authorized individual/team in charge of production systems at your company.
+                </li>
+                <li number="4">
+                    Ensure that ClientID and Clientsecret that you generate in Developer Portal which are used in your
+                    production systems are not accessible to any unauthorized person. If you have reasons to believe
+                    that your ClientID and ClientSecret have been compromised, please rotate them using the Reloadly
+                    Developer portal immediately.
+                </li>
+                <li number="5">
+                    As a best practice, consider rotating your ClientID and ClientSecret every 90 days or less.
+                </li>
+                <li number="6">
+                    Do not share your Bearer Tokens with anyone. If you believe that your Bearer Token has been
+                    compromised please notify Reloadly immediately.
+                </li>
+                <li number="7">
+                    For server-side integration, share your production server IP addresses with Reloadly so that they
+                    will be whitelisted by Reloadly. When you whitelist your production server IP addresses, it ensures
+                    that traffic from only those servers will be accepted by Reloadly. If your servers are in a public
+                    cloud like AWS or GCP, do consult your cloud provider as to how you can ensure stable IP addresses
+                    for your production servers. You may also consider routing your traffic through proxy servers with
+                    stable IP addresses.
+                </li>
+                <li number="8">
+                    For integration with Reloadly via mobile SDKs, consider 2FA in your mobile apps like OTP, etc. Don't
+                    just rely on simple user/password-based authentication.
+                </li>
+                <li number="9">
+                    Reach out to Reloadly for any assistance you might need regarding consuming Reloadly APIs in a
+                    secure way.
+                </li>
+            </ul>
+        </section>
+    </div>
+
+
+    <div class="skewed-section">
+
+        <app-footer [showLikeDisLikeButtons]="true"></app-footer>
+
+        <!-- background -->
+        <div class="background">
+            <img src="assets/images/skewed-background.svg" />
+        </div>
+
+    </div>
+
+</div>

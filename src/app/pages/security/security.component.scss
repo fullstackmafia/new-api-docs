@@ -1,0 +1,8 @@
+.page {
+    width: 100vw;
+    .main-content {
+        flex-grow: 1;
+        padding-top: 60px;
+        padding-right: var(--side-padding);
+    }
+}

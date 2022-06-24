@@ -1,11 +1,14 @@
 main {
     width: 100%;
     position: relative;
-    .content {
+    .header-content {
         width: 100%;
         padding: 0 32px;
         @media screen and (max-width: 1440px) {
             // width: 80%;
         }
+    }
+    .body-content {
+        width: 100%;
     }
 }

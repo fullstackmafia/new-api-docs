@@ -17,6 +17,18 @@ const routes: Routes = [
     {
         path: 'utility-payments',
         loadChildren: () => import('./pages/utility/utility.module').then(m => m.UtilityModule)
+    },
+    {
+        path: 'developer-tools',
+        loadChildren: () => import('./pages/developer-tools/developer-tools.module').then(m => m.DeveloperToolsModule)
+    },
+    {
+        path: 'security',
+        loadChildren: () => import('./pages/security/security.module').then(m => m.SecurityModule)
+    },
+    {
+        path: 'all-products',
+        loadChildren: () => import('./pages/all-products/all-products.module').then(m => m.AllProductsModule)
     }
 ];
 

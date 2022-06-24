@@ -23,7 +23,7 @@ body {
 }
 
 * {
-    line-height: 1.4;
+    line-height: 1.5;
     transition: all ease 0.4s;
 }
 
@@ -62,6 +62,7 @@ a {
 }
 
 .overview-page {
+    min-height: 100vh;
     h3 {
         font-weight: 500;
         font-size: 24px;
@@ -77,7 +78,7 @@ a {
         .page-description {
             font-weight: 400;
             font-size: 16px;
-            padding-bottom: 35px;
+            margin-bottom: 35px;
         }
         .external-content {
             width: auto;
@@ -99,6 +100,29 @@ a {
                 margin-left: 16px;
                 position: relative;
                 right: 0;
+            }
+        }
+        .sub-section {
+            gap: 0 3%;
+            margin-bottom: 100px;
+            .left {
+                width: 45%;
+                .sub-section-description {
+                    width: 100%;
+                    font-size: 16px;
+                    margin-bottom: 24px;
+                }
+                .sub-section-subheading {
+                    width: 100%;
+                    font-size: 32px;
+                    margin-bottom: 24px;
+                }
+            }
+            .right {
+                width: 50%;
+                img {
+                    width: 100%;
+                }
             }
         }
     }

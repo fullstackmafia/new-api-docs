@@ -1,0 +1,41 @@
+.security {
+    .top {
+        padding: 0 30% 0 60px;
+        .list-section {
+            margin-top: 40px;
+            padding-bottom: 30px;
+            ul {
+                margin-top: 50px;
+                padding: 0;
+                li {
+                    position: relative;
+                    list-style: none;
+                    font-weight: 400;
+                    font-size: 16px;
+                    margin-bottom: 28px;
+                    &:before {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background: var(--purple-1);
+                        color: var(--white);
+                        position: absolute;
+                        left: -50px;
+                        content: attr(number);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    &::marker {
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+    }
+    .skewed-section {
+        .background {
+            top: -350px;
+        }
+    }
+}

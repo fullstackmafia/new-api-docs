@@ -1,0 +1,52 @@
+.security {
+    width: 100%;
+    .top {
+        width: 100%;
+        .content {
+            width: 100%;
+            h3 {
+                width: 100%;
+                text-align: left;
+                margin: 30px 0 15px;
+            }
+            .content-description {
+                width: 100%;
+                text-align: left;
+                font-weight: 400;
+                font-size: 16px;
+                margin: 5px 0;
+            }
+            ul {
+                width: 100%;
+                text-align: left;
+                padding: 0;
+                li {
+                    font-weight: 400;
+                    font-size: 16px;
+                    margin: 5px 0;
+                }
+            }
+            .image {
+                width: 100%;
+                margin: 60px 0;
+                img {
+                    width: 100%;
+                }
+            }
+            .small-image-1 {
+                width: 70%;
+            }
+            .small-image-2 {
+                width: 50%;
+            }
+            .small-image-3 {
+                width: 200px;
+            }
+        }
+    }
+    .skewed-section {
+        .background {
+            top: -200px;
+        }
+    }
+}

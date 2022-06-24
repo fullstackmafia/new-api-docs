@@ -1,0 +1,38 @@
+.page {
+    width: 100%;
+    padding-left: var(--side-padding);
+    padding-top: 60px;
+    .products-section {
+        .product-list {
+            width: 30%;
+            padding: 22px 24px;
+            border-radius: 8px;
+            h3 {
+                font-weight: 500;
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+            .product-item {
+                margin-bottom: 16px;
+                img {
+                    width: 16px;
+                    margin-top: 5px;
+                }
+                .details {
+                    margin-left: 16px;
+                    .title {
+                        font-weight: 450;
+                        font-size: 18px;
+                    }
+                    .description {
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .pad-right {
+        padding-right: var(--side-padding) !important;
+    }
+}
