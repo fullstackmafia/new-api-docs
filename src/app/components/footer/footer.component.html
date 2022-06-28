@@ -1,12 +1,15 @@
 <footer class="">
     <div class="top" *ngIf="showLikeDisLikeButtons">
-        <h4 class="text-black-3">
+        <h4 class="text-black-3 d-inline-flex flex-column flex-md-row align-items-start align-items-md-center">
             Was this page helpful?
-            <img src="assets/images/like-button.svg" />
-            <img src="assets/images/dislike-button.svg" />
+            <div class="votes">
+                <img src="assets/images/like-button.svg" />
+                <img src="assets/images/dislike-button.svg" />
+            </div>
+
         </h4>
     </div>
-    <div class="bottom d-flex align-items-end justify-content-between">
+    <div class="bottom d-flex flex-column flex-md-row align-items-start align-items-md-end justify-content-between">
         <div class="left">
             <p class="text-black-5">
                 <img src="assets/images/home/mail.svg" />

@@ -1,3 +1,6 @@
+.hero-section-1 {
+    margin-bottom: 80px;
+}
 .sub-section {
     width: 100%;
     .right {
@@ -7,9 +10,16 @@
 .section-type-3 {
     padding: 0;
     .section-list {
-        gap: 0 30px;
+        gap: 30px 3%;
+        justify-content: flex-start !important;
         .section-item {
             width: 30%;
+            @media screen and(max-width:768px) {
+                width: 48%;
+            }
+            @media screen and(max-width:540px) {
+                width: 100%;
+            }
         }
     }
 }

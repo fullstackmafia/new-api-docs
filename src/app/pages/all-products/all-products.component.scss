@@ -1,12 +1,21 @@
 .page {
     width: 100%;
-    padding-left: var(--side-padding);
-    padding-top: 60px;
+    padding: 60px var(--side-padding);
     .products-section {
+        width: 90%;
+        @media screen and(max-width:768px) {
+            width: 100%;
+        }
         .product-list {
             width: 30%;
             padding: 22px 24px;
             border-radius: 8px;
+            @media screen and(max-width:768px) {
+                width: 33%;
+            }
+            @media screen and(max-width:675px) {
+                width: 100%;
+            }
             h3 {
                 font-weight: 500;
                 font-size: 24px;

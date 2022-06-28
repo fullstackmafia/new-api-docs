@@ -1,4 +1,4 @@
-<header class="bg-white">
+<header class="bg-white desktop-header">
     <section class="top d-flex align-items-center justify-content-between">
         <div class="logo"><img alt="logo" src="assets/images/logo.svg" /></div>
         <div class="searchbar d-flex align-items-center justify-content-center">
@@ -24,6 +24,7 @@
             <h2 class="d-flex align-items-center">
                 <div class="icon"><img src="assets/images/home/API.svg" /></div>
                 APIs & SDKs
+
             </h2>
             <h2 class="d-flex align-items-center">
                 <div class="icon"><img src="assets/images/home/support.svg" /></div>
@@ -32,3 +33,38 @@
         </div>
     </section>
 </header>
+
+<!-- Small header -->
+<header class="mobile-header bg-white align-items-center justify-content-between">
+    <div class="logo"><img alt="logo" src="assets/images/logo.svg" /></div>
+    <div class="right d-flex align-items-center justify-content-end">
+        <div class="search-icon"><img alt="search" src="assets/images/home/search.svg" /></div>
+        <div class="nav-menu bg-purple-1 d-flex flex-column align-items-end justify-content-center"
+            [class.active-menu]="openMenu" (click)="openMenu = !openMenu">
+            <div class="bar-1 bg-white"></div>
+            <div class="bar-2 bg-white"></div>
+        </div>
+    </div>
+</header>
+<div class="menuToggle bg-white" [class.open-menu]="openMenu">
+    <h2 routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active-link">Home</h2>
+    <h2 routerLink="/airtime" routerLinkActive="active-link">Airtime</h2>
+    <h2 routerLink="/gift-cards" routerLinkActive="active-link">Gift Cards</h2>
+    <h2 routerLink="/utility-payments" routerLinkActive="active-link">Utility Payments</h2>
+    <h2 routerLink="/developer-tools" routerLinkActive="active-link">Developer Tools</h2>
+    <h2 routerLink="/security" routerLinkActive="active-link">Security</h2>
+    <h2 routerLink="/all-products" routerLinkActive="active-link">All Products</h2>
+    <h2 class="d-flex align-items-center justify-content-center">
+        <div class="icon"><img src="assets/images/home/API.svg" /></div>
+        APIs & SDKs
+
+    </h2>
+    <h2 class="d-flex align-items-center justify-content-center">
+        <div class="icon"><img src="assets/images/home/support.svg" /></div>
+        Support
+    </h2>
+    <div class="action-buttons medium-text d-flex flex-column align-items-center">
+        <a class="text-purple-1">Create account</a>
+        <a>Sign in</a>
+    </div>
+</div>

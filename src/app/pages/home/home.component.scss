@@ -3,8 +3,17 @@
     padding-left: var(--side-padding);
 
     .hero-section {
+        padding-right: 60px;
+        @media screen and (max-width: 540px) {
+            padding-right: var(--small-side-padding);
+        }
         .left-content {
             padding-top: 60px;
+        }
+        .right-content {
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
         }
         .section-heading {
             width: 100%;
@@ -27,8 +36,9 @@
             margin-top: 27px;
         }
         .tags {
-            margin-top: 50px;
+            margin-top: 56px;
             gap: 24px;
+            flex-flow: row wrap;
             p {
                 height: 34px;
                 background: var(--blue-1);
@@ -46,14 +56,20 @@
         }
     }
     .explore-section {
-        padding: 100px 0;
+        margin-top: 88px;
         h3 {
             font-size: 32px;
             margin-bottom: 45px;
         }
+        .explore-list {
+            flex-flow: row wrap;
+        }
         .explore-item {
             padding: 10px 0 10px 40px;
             border-left: 1px solid #ececec;
+            @media screen and (max-width: 540px) {
+                margin-bottom: 10px;
+            }
             h4 {
                 font-weight: 500;
                 font-size: 24px;
@@ -71,8 +87,11 @@
         }
     }
     .summary-section {
-        padding: 50px 0;
+        margin-top: 100px;
         .segments {
+            @media screen and (max-width: 540px) {
+                margin-bottom: 30px;
+            }
             .image {
                 width: 100%;
                 position: relative;
@@ -133,22 +152,18 @@
         }
     }
     .plugin-section {
-        padding: 100px 0 150px;
+        margin-top: 130px;
         .images {
             position: relative;
             margin-right: 90px;
+            @media screen and (max-width: 1024px) {
+                margin-right: 50px;
+            }
             .plugin-image {
-                width: 280px;
+                width: 100%;
                 img {
                     width: 100%;
                 }
-            }
-            .image-3 {
-                position: absolute;
-                top: 100px;
-                left: 50%;
-                transform: translateX(-50%);
-                margin: 0 auto;
             }
         }
         h3 {
@@ -161,17 +176,26 @@
             font-weight: 400;
             font-size: 16px;
             margin-bottom: 40px;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
             &:not(:last-of-type) {
                 width: 65%;
                 margin-bottom: 25px;
+                @media screen and (max-width: 768px) {
+                    width: 90%;
+                }
             }
         }
         button {
             height: 37px;
+            @media screen and (max-width: 768px) {
+                height: 42px;
+            }
         }
     }
     .experience-section {
-        margin: 100px 0;
+        margin-top: 100px;
         .box {
             border-radius: 20px;
             padding: 45px 40px 60px;
@@ -187,6 +211,9 @@
         }
         button {
             margin-left: 30px;
+            @media screen and (max-width: 540px) {
+                margin: 20px 0 0 0;
+            }
         }
     }
     .pad-right {

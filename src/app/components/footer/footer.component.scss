@@ -1,68 +1,88 @@
 footer {
-    padding: 100px 0 100px 0;
+    padding: 100px 0;
     position: relative;
     .top {
         margin-bottom: 100px;
         h4 {
             font-weight: 500;
             font-size: 24px;
+            .votes {
+                @media screen and (max-width: 540px) {
+                    margin-top: 20px;
+                }
+            }
             img {
                 width: 85px;
                 margin-left: 40px;
                 cursor: pointer;
+                @media screen and (max-width: 540px) {
+                    margin-left: 0;
+                }
                 &:last-of-type {
                     margin-left: 16px;
                 }
             }
         }
     }
-    .left {
-        p {
-            font-weight: 400;
-            font-size: 16px;
-            &:not(:last-of-type) {
-                margin-bottom: 20px;
+    .bottom {
+        .left {
+            @media screen and (max-width: 540px) {
+                width: 100%;
             }
-            img {
-                width: 16px;
-                margin-right: 8px;
-            }
-            span {
-                font-weight: 500;
-                cursor: pointer;
-            }
-        }
-    }
-    .right {
-        p {
-            font-weight: 400;
-            font-size: 16px;
-            margin-bottom: 13px;
-        }
-        .input-box {
-            width: 400px;
-            height: 56px;
-            border: 0.5px solid #606a7a;
-            border-radius: 5px;
-            padding: 14px 20px;
-            background: var(--white);
-            &:focus-within {
-                border: 1px solid var(--purple-1);
-            }
-            input {
-                width: 70%;
-                border: none;
-                background: transparent;
+            p {
                 font-weight: 400;
                 font-size: 16px;
-                outline: none;
+                &:not(:last-of-type) {
+                    margin-bottom: 20px;
+                }
+                img {
+                    width: 16px;
+                    margin-right: 8px;
+                }
+                span {
+                    font-weight: 500;
+                    cursor: pointer;
+                }
             }
-            span {
-                padding: 10px;
-                border-left: 1px solid #edebff;
-                cursor: pointer;
-                &:hover {
-                    text-decoration: underline;
+        }
+        .right {
+            @media screen and (max-width: 540px) {
+                width: 100%;
+                margin-top: 30px;
+            }
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                margin-bottom: 13px;
+            }
+            .input-box {
+                width: 400px;
+                height: 56px;
+                border: 0.5px solid #606a7a;
+                border-radius: 5px;
+                padding: 14px 20px;
+                background: var(--white);
+                @media screen and (max-width: 540px) {
+                    width: 100%;
+                }
+                &:focus-within {
+                    border: 1px solid var(--purple-1);
+                }
+                input {
+                    width: 70%;
+                    border: none;
+                    background: transparent;
+                    font-weight: 400;
+                    font-size: 16px;
+                    outline: none;
+                }
+                span {
+                    padding: 10px;
+                    border-left: 1px solid #edebff;
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }

@@ -3,12 +3,15 @@ main {
     position: relative;
     .header-content {
         width: 100%;
-        padding: 0 32px;
-        @media screen and (max-width: 1440px) {
+        padding: 0 var(--small-side-padding);
+        @media screen and (max-width: 540px) {
             // width: 80%;
         }
     }
     .body-content {
         width: 100%;
+        @media screen and(max-width: 1024px) {
+            margin-top: 65px;
+        }
     }
 }

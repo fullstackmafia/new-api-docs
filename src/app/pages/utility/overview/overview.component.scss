@@ -1,8 +1,20 @@
-.quickstart-box {
-    width: 40%;
-}
 .section-type-3 {
     .section-list {
         gap: 0 15%;
+        @media screen and(max-width: 975px) {
+            gap: 0 10%;
+        }
+        @media screen and (max-width: 695px) {
+            gap: 30px 4%;
+        }
+        .quickstart-box {
+            width: 40%;
+            @media screen and (max-width: 695px) {
+                width: 48%;
+            }
+            @media screen and(max-width: 540px) {
+                width: 100%;
+            }
+        }
     }
 }

@@ -1,5 +1,5 @@
-// Colors
 :root {
+    // Colors
     --purple-1: #7700ff;
     --purple-2: #edebff;
     --black: #000000;
@@ -14,4 +14,23 @@
     --blue-1: #e1ebff;
     --blue-2: #00163a;
     --white: #ffffff;
+
+    // Padding
+    --side-padding: 10vw;
+    --small-side-padding: 32px;
+
+    // Screen Sizes
+    --desktop-hd-size: 1920px;
+    --desktop-size: 1366px;
+    --tablet-size: 768px;
+    --mobile-size: 540px;
+    --small-mobile-size: 375px;
+
+    @media screen and (max-width: 1366px) {
+        --side-padding: 6vw;
+    }
+    @media screen and (max-width: 675px) {
+        --small-side-padding: 20px;
+        --side-padding: 20px;
+    }
 }
