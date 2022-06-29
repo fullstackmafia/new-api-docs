@@ -9,7 +9,13 @@ const routes: Routes = [
         children: [
             {
                 path: 'overview',
-                loadChildren: () => import('./overview/overview.module').then(m => m.OverviewModule)
+                loadChildren: () => import('./overview/overview.module').then(m => m.OverviewModule),
+                data: {
+                    title: 'Overview - Utility Payments | Reloadly Developer Documentation',
+                    seoTitle: 'Overview - Utility Payments | Reloadly Developer Documentation',
+                    description: 'Utility Payments overview for developers using reloadly.',
+                    keywords: 'Utility Payments API, Make utility payment, payment providers',
+                }
             },
             {
                 path: '',

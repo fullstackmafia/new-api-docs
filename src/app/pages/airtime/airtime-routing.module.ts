@@ -11,8 +11,10 @@ const routes: Routes = [
                 path: 'overview',
                 loadChildren: () => import('./overview/overview.module').then(m => m.OverviewModule),
                 data: {
-                    title: 'Overview - Airtime | Reloadly Documentation',
-                    seoTitle: 'Overview - Airtime | Reloadly Documentation',
+                    title: 'Overview - Airtime | Reloadly Developer Documentation',
+                    seoTitle: 'Overview - Airtime | Reloadly Developer Documentation',
+                    description: 'Airtime overview for developers using reloadly.',
+                    keywords: 'Airtime API, Top up, Airtime promo, FX rate, promotions',
                 }
             },
             {

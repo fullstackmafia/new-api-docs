@@ -4,7 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
     {
         path: '',
-        loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
+        loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule),
+        data: {
+            title: 'Home | Reloadly Developer Documentation',
+            seoTitle: 'Home | Reloadly Developer Documentation',
+            description: 'Documentation for developers using reloadly.',
+            keywords: 'Developers documentation, Mobile bill payment API, Bill pay API, Utility bill payment api provider, Gift cards',
+        }
     },
     {
         path: 'airtime',
@@ -28,7 +34,13 @@ const routes: Routes = [
     },
     {
         path: 'all-products',
-        loadChildren: () => import('./pages/all-products/all-products.module').then(m => m.AllProductsModule)
+        loadChildren: () => import('./pages/all-products/all-products.module').then(m => m.AllProductsModule),
+        data: {
+            title: 'All Products | Reloadly Developer Documentation',
+            seoTitle: 'All Products | Reloadly Developer Documentation',
+            description: 'All reloadly products for developers using reloadly.',
+            keywords: 'Mobile bill payment API, Bill pay API, Utility bill payment api provider, Gift cards',
+        }
     }
 ];
 

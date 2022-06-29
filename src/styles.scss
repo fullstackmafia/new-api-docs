@@ -331,12 +331,7 @@ a {
             margin-bottom: 34px;
         }
         .more-list {
-            @extend .d-flex,
-                .flex-wrap,
-                .align-items-stretch,
-                .justify-content-start,
-                .justify-content-md-start,
-                .justify-content-lg-between;
+            @extend .d-flex, .flex-wrap, .align-items-stretch, .justify-content-start;
             @media screen and (max-width: 768px) {
                 gap: 20px 3%;
             }

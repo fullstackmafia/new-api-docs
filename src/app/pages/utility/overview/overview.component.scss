@@ -1,6 +1,12 @@
+.section-type-2 {
+    .section-list {
+        justify-content: flex-start !important;
+    }
+}
 .section-type-3 {
     .section-list {
         gap: 0 15%;
+        justify-content: flex-start !important;
         @media screen and(max-width: 975px) {
             gap: 0 10%;
         }

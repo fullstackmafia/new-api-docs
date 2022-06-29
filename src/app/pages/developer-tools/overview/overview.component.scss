@@ -1,6 +1,7 @@
 .second-section {
     .section-list {
         gap: 0 30px;
+        justify-content: flex-start !important;
         .section-item {
             width: 40%;
             @media screen and(max-width:540px) {
